@@ -1,10 +1,13 @@
-#testimonials {
-  width: $container-lg;
+.swiper {
+  width: 100%;
 
-  .container {
-    flex-direction: column;
-    article {
+  .swiper-wrapper {
+    // brings swiper down
+    margin-bottom: 4rem;
+    display: flex;
+    .swiper-slide {
       @include gradientBackground;
+      width: 100%;
       padding: 1.5rem 2rem;
       border-radius: 1rem;
       cursor: default;
@@ -27,6 +30,10 @@
       }
     }
   }
+
+  .swiper-pagination-bullet {
+    background: $primary-color;
+  }
 }
 
 // * ===================== MEDIA QUERIES (MEDIUM DEVICES) ================ *//
@@ -45,9 +52,9 @@
 // * ===================== MEDIA QUERIES (SMALL DEVICES) ================ *//
 
 @media screen and (max-width: 600px) {
-  #testimonials {
-    .container {
-      .article {
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
         padding: 1.5rem;
       }
     }

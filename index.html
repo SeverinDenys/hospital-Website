@@ -7,9 +7,15 @@
     <!-- MINIFIED CSS -->
     <title>Reponsive Hospital Website using HTML, Sass & Javascript</title>
     <!-- BOXICONS CDN -->
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -232,15 +238,15 @@
       </div>
     </section>
     <!-- END OF SPECIALISTS -->
-    <section id="testimonials">
+    <section id="testimonials" class="swiper mySwiper">
       <h2>What our Patients Say</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
         nobis?
       </p>
 
-      <div class="container">
-        <article>
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -257,7 +263,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -274,7 +280,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -291,7 +297,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -308,7 +314,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -325,7 +331,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -342,7 +348,7 @@
             </div>
           </div>
         </article>
-        <article>
+        <article class="swiper-slide">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
             dolores aut et possimus error, fuga vel culpa iure, vero, officiis
@@ -360,7 +366,10 @@
           </div>
         </article>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

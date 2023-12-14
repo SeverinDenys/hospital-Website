@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   openNavBtn.addEventListener("click", () => {
     navItems.style.display = "flex";
-    closeNavBtn.style.display = "inline-block"; // Show close button when opening nav
-    openNavBtn.style.display = "none"; // Hide open button when opening nav
+    closeNavBtn.style.display = "inline-block";
+    openNavBtn.style.display = "none";
   });
 
   const closeNav = () => {
@@ -16,4 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   closeNavBtn.addEventListener("click", closeNav);
+
+  // Initialize Swiper Testimonials section
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, // Set to 1 slide per view for mobile devices
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  // responsive breakpoints
 });
