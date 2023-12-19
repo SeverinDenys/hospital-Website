@@ -17,6 +17,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeNavBtn.addEventListener("click", closeNav);
 
+  //  close nav menu when menu item is clicked
+  if (window.innerWidth < 1024) {
+    document.querySelectorAll("#nav__Items li a").forEach((navItem) => {
+      navItem.addEventListener("click", () => {
+        closeNav();
+      });
+    });
+  }
+
+  // change navbar styles on scroll
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 0) {
+      nav.classList.add("window-scroll");
+    } else {
+      nav.classList.remove("window-scroll");
+    }
+  });
   // Initialize Swiper Testimonials section
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1, // Set to 1 slide per view for mobile devices
